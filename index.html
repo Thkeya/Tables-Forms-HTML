@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        .background {
+            background-color:aquamarine ;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <form class="background">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            First Name: <br>
+            <input type="text" namne ="firstname" value="" required>
+            <br>
+            Last Name: <br>
+            <input type="text" name="lastname" value="" required>
+            <br>
+            Email: <br>
+            <input type="text" name="email" value="" pattern="[^ @]*@[^ @]*" placeholder="name@email.com" required>
+            <br>
+            Message: <br>
+            <input type="text" name="message" value="" required>
+            <br>
+            <br>
+            <label for="priority">Priority:</label>
+            <select name="importance" id="priority" required>
+                <option value=""></option>
+                <option value="None">None</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
